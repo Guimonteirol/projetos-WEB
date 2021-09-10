@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif ; /*PADRONIZANDO TODO O SITE*/
+    background: #fff url(fundo.png) repeat-x /*SÓ REPETE NA HORIZONTAL*/;
+}
+
+#tudo{
+    width: 750px;
+    margin: 0 auto; /*CENTRALIZAR A DIV*/
+    /*border: 2px solid black;*/
+}
+#topo{
+    height: 150px; /*ALTURA*/
+    background: url('detalhe-topo.png') no-repeat right/*NÃO REPETE A FOTO*/;
+    
+    padding-top: 25px;
+}
+
+/*CRIANDO BARRA DE NAVEGAÇÃO
+*/
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none; /*RETIRA OS MARCADORES DA LISTA*/
+}
+#topo ul{ /*SELETORES* AQUI SÓ AS ul DENTRO DA tag topo*/
+    background-color: #b10333;
+    color: white;
+    margin-top: 30px;
+    float: left;   
+}
+#topo ul li{ 
+    float: left; /*A BARRA DE NAVEGAÇAÕ HORZONTAL ESQUERDA*/
+}
+#topo ul a{  /*formatação dentro dos links da ul*/
+    font-size:0.9em;
+    padding: 0.5em 1.5em;
+    display: block;
+    line-height: 2.1em; /*QUANDO USA SÓ O height O CONTEÚDO FICA DESCENTRALIZADO*/
+    color: white;
+    background: url('divisor.png')no-repeat left;
+    text-decoration: none;
+}
+#topo ul a:hover{
+   color: #69001d; ;
+  
+}
+body.home #barran a#home,   /*AQUI ESTOU PEGANDO OS LINKS DA PAG E MARCANDO-OS APOÓS A EXECUÇÃO*/
+body.brasil #barran a#Brasil,
+body.internacional #barran a#Internacional,
+body.fotos #barran a#Fotos
+{
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+
+/*IREI TIRAR A IMAGEM QUE SE REPTE NO PRIMEIRO ELEMENTO DO LINK
+*/
+#topo ul .primeiro a{
+    background: none;
+}
+/*---------------------------------------------------------------*/
+
+/*COFIGURANDO LAYOUT DAS 3 COLUNAS*/
+
+#conteudo{
+   
+    margin-top:60px;
+    display: flex;
+}
+/* AQUI SÃO AS QUANTIDADES DE COLUNAS POR CADA PAGINA, QUE É DEFINIDA EM UM id NO body
+*/
+#tres-colunas #primario{
+    width: 270px;
+    
+    margin: 0 0 20px 190px;
+}
+#duas-colunas #primario{
+    width: 555px;
+    
+    margin: 0 0 20px 190px;
+}
+
+#uma-colunas #primario{
+    width: 750px;
+   
+    margin: 0 0 20px 0;
+}
+/* ------- aprendi a editar a quantidade de colunas, vou no body, crio uma ID para a quantidade
+de colunas que quero e vou mudando o seu width de acrodo com o tamanho da pag
+*/
+#primario{
+    width: 270px;
+   
+    margin: 0 0 20px 190px;
+}
+
+#secundario{
+    width: 270px;
+    
+    margin: 0 0 20px 10px;
+}
+
+#lateral{
+    width: 180px;
+   
+    margin: 0 0 20px -750px;
+}
+
+#tudorodape{
+    background: #294c71 ;
+    padding: 20px;
+}
+
+#rodape{
+    width: 750px;
+    margin: 0 auto;
+    color:white;
+}
+/*------EDITANDO CAIXAS------
+*/
+.caixas{
+    margin: 10px 0;
+    padding: 5px;
+    background: #fff url(fundo-caixa.png);
+}
+#conteudo-caixas{
+    background-color: white;
+    padding: 5px;
+    margin-top: 5px;
+}
+h2{
+    font-size:1.1em;
+    background: #294c71;
+    color: #fff;
+    padding: 5px;
+}
+/*
+*/
+
+/*CONTEDU LATERAL*/
+#lateral ul a{
+    color: black;
+    font-size:0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    border-bottom: 1px solid #f3f3f3;
+}
+#lateral ul a:hover{
+    color: #a1a1a1;
+    background:#f9f9f9 url('marcador.png') no-repeat left center;
+    padding-left: 20px;
+}
+
+label{
+    cursor: pointer;
+    display: block;
+}
+input{
+    width: 145px;
+    padding: 5px;
+}
+button{
+    margin-top: 10px;
+    background: #b10333;
+    color:#fff;
+    border: 2px solid #870529;
+    padding:5px;
+}
+
+h3{
+    display: inline;
+    text-transform: uppercase; /*TRANSFORMAR EM MAIUSCULA*/
+    color: #fff;
+    background:#b10333 ;
+    font-size:0.9em;
+    width: 59%;
+  
+}
+
+
+#conteudo img{
+    margin-bottom: 5px;
+    border: 3px solid #dfdfdf;
+}
+
+
+#conteudo-caixas a{
+    color: #870529;
+}
+
+/*FORMATANDO A LISTA DE NOTÍCIAS
+*/
+
+#listanotícias li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+
+}
+#listanotícias li a img{
+  float:left;
+  margin: 5px;
+
+}
+#listanotícias li a{
+    text-decoration: none;
+    font-size: 0.8em;
+}
+#listanotícias li h3{
+    background-color: #f3f3f3;
+    color:#3e7ab9;
+}
+
+#listanotícias li:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
