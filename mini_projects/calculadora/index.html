@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="calculadora">   
+        <table>
+            <tr>
+                <td colspan="4" ><p id="resultado" ></p></td>
+            </tr>
+            <tr>
+                <td><button value="+" class="btn" onclick="botao(value)">+</button></td>
+                <td><button value="-" class="btn" onclick="botao(value)">-</button></td>
+                <td><button value="*" class="btn" onclick="botao(value)">&times;</button></td>
+                <td><button value="/" class="btn" onclick="botao(value)">&divide;</button></td>
+            </tr>
+            <tr>
+                <td><button value="7" class="btn" onclick="botao(value)">7</button></td>
+                <td><button value="8" class="btn" onclick="botao(value)">8</button></td>
+                <td><button value="9" class="btn" onclick="botao(value)">9</button></td>
+                <td rowspan="4" ><button style="height: 400px;"  class="btn" onclick="calcular()">=</button></td>
+            </tr>
+            <tr>
+                <td><button value="4" class="btn" onclick="botao(value)">4</button></td>
+                <td><button value="5" class="btn" onclick="botao(value)">5</button></td>
+                <td><button value="6" class="btn" onclick="botao(value)">6</button></td>
+            </tr>
+            <tr>
+                <td><button value="1" class="btn" onclick="botao(value)">1</button></td>
+                <td><button value="2" class="btn" onclick="botao(value)">2</button></td>
+                <td><button value="3" class="btn" onclick="botao(value)">3</button></td>
+            </tr>
+            <tr>
+                <td><button value="0" class="btn" onclick="botao(value)">0</button></td>
+                <td><button value="."class="btn" onclick="botao(value)">.</button></td>
+                <td><button class="btn" onclick="limpar()">C</button></td>
+            </tr>
+        </table>
+       
+    </div>
+            
+
+</body>
+    <script src="app.js"></script>
+</html>
